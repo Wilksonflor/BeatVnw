@@ -11,13 +11,15 @@ Link do projeto [BeatVnw](https://wilksonflor.github.io/BeatVnw/)
    ```bash
    git clone https://github.com/Wilksonflor/BeatVnw.git
 
-##Estrutura do Projeto
+### Estrutura do Projeto
+
 A estrutura do projeto é simples:
+
 BeatVnw/
 │
 ├── index.html
 ├── styles/
-│   └── style.css
+│ └── style.css
 ├── images/
-│   └── logo.png
+│ └── logo.png
 └── ...
