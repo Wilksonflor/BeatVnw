@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #129799;
+}
+header nav {
+  width: 75%;
+  margin: 10px 0;
+
+  display: flex;
+  justify-content: space-evenly;
+}
+header nav a {
+  color: #fff;
+  font-weight: 500;
+  font-size: clamp(1.2rem, 2vw, 0.5rem);
+  position: relative;
+}
+header nav a::before,
+header nav a::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #cdcd;
+  transform: scaleX(0);
+  transform-origin: bottom;
+  transition: 0.4s ease-in-out;
+}
+
+header nav a:hover::before,
+header nav a:hover::after {
+  transform: scaleX(0.9);
+}
+
+header .mainHeader {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .mainHeader img {
+  width: 30%;
+}
+
+header .mainHeader h1 {
+  color: #fff;
+  font-size: clamp(2rem, 3vw, 2.5rem);
+  margin-right: 10px;
+}
+/* Terminou o header */
+
+/* Inicio da section */
+
+main section {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  background-color: #ffa185;
+}
+section .textSection {
+  padding: 20px;
+}
+
+main section .textSection h2 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+main section .textSection p {
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+main section .imgContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+main section .imgContainer img {
+  margin: 20px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 2px 3px 2px 1px rgba(0, 0, 0, 0.2)
+}
+
+main section a {
+  color: #000;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-block: 20px;
+  text-align: center;
+}
+
+/* footer */
+footer {
+
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #129799;
+}
+footer .iconFooter {
+
+  display: flex;
+  justify-content: space-evenly;
+  width: 20%;
+}
+footer nav {
+  width: 30%;
+
+  display: flex;
+  justify-content: space-evenly;
+}
+footer nav a {
+  color: #fff;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 320px) {
+  main section .imgContainer img {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  section .textSection {
+    text-align: center;
+  }
+  main section .imgContainer img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1380px) {
+  main section .imgContainer img {
+    width: 65%;
+  }
+}
