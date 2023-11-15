@@ -15,9 +15,10 @@ Link do projeto [BeatVnw](https://wilksonflor.github.io/BeatVnw/)
 
 A estrutura do projeto é simples:
 
+```&nbsp; 
 BeatVnw/
 │
-├── index.html
+├── index.html 
 ├── styles/
 │ └── style.css
 ├── images/
